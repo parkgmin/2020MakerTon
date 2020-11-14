@@ -1,7 +1,7 @@
 from pyowm import OWM 
 
 k2c = lambda k: k - 273.15
-API_KEY = "0ac1a5333945db74b5208732d0e43725" 
+API_KEY = "당신의 키를 적어주세요" 
 owm = OWM(API_KEY) 
 
 mgr = owm.weather_manager() 
@@ -12,4 +12,3 @@ print(weather.detailed_status)
 
 print("최대 온도:", k2c(temp["temp_max"])) 
 print("최소 온도:", k2c(temp["temp_min"])) 
-
